@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <cabecera titulo= "Menu"></cabecera>
+    <cuerpo></cuerpo>
+    <pie autor= "Camila Beczkowski y Natanel Gutkind"></pie>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+
+import Pie from './components/Pie.vue'
+import Cabecera from './components/Cabecera.vue'
+import Cuerpo from './components/Cuerpo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Cabecera,
+    Pie,
+    Cuerpo,
   }
 }
 </script>

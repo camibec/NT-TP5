@@ -1,10 +1,6 @@
 <template>
   <body>
-      <lista v-on:eliminar(index)="eliminar(index)"
-            :productos="[{ id: '011', desc: 'Papas', precio: '150' },
-                { id: '012', desc: 'Sprite', precio: '80' },
-                { id: '013', desc: 'Hamburguesa', precio: '300' },
-                { id: '014', desc: 'Pancho', precio: '200' }]"> </lista>
+      <lista> </lista>
   </body>
 </template>
 

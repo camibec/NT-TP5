@@ -14,14 +14,6 @@ export default {
     components: {
         Lista,
     },
-    methods: {
-        agregar() {
-            this.productos.push({id: this.idIngresado, desc: this.descIngresado, precio: this.precioIngresado})
-        },
-        eliminar(index) {
-            this.productos.splice(index, 1)
-        }
-    }
 }
 </script>
 

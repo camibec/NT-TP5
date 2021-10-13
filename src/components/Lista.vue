@@ -1,30 +1,37 @@
 <template>
   <div>
+    
+    <table style="margin: 0 auto;">
+    <h1> {{"Productos"}} </h1>
+    <tr>
+    <td>
     <div class = "row">
-        <div class= "col-6">Id<input v-model="id"></div>
+        <div class= "col-6">Id <input v-model="id"></div>
     </div>
     <br>
     <div class = "row">
-        <div class= "col-6">Descripción<input v-model="desc"></div>
+        <div class= "col-6">Descripción <input v-model="desc"></div>
     </div>
     <br>
     <div class = "row">
-        <div class= "col-6">Precio<input v-model="precio"></div>
+        <div class= "col-6">Precio <input v-model="precio"></div>
     </div>
     <br><br>
 
     <button v-on:click="agregar">Agregar</button>   
-    <br>
-    {{"Lista de Productos"}}
-    <br><br>
+    </td> 
+    
+    <td> 
+    <h3>{{"Listado"}}</h3>
     <li v-for="(p, index) in productos" :key="index">
         ID: {{ p.id }} - {{p.desc}} - ${{p.precio}}
 
             <button v-on:click="modificar(index)">Modificar</button>
             <button v-on:click="eliminar(index)">Eliminar</button> 
     </li>
-    
-        
+    </td>
+    </tr>
+    </table>   
   </div>
 </template>
 

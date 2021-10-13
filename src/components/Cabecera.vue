@@ -8,8 +8,6 @@
 export default {
     name: 'cabecera',
     props: ['titulo'],
-    
-    
 }
 </script>
 
